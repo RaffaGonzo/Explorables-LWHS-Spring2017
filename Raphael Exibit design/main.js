@@ -1,6 +1,6 @@
 var v = 0;
 var bg = 255;
-var time = 423000;
+var time = 2000//423000;
 var baseUrl = 'https://www.youtube.com/embed/mg6-SnUl0A0';
 var d = 0;
 var points = 0;
@@ -31,125 +31,13 @@ function onClick() {
 }
 // article came from http://downloads.ivyglobal.com/ISEE/MIDDLE_LEVEL_TEST_1/isee_middle_level_test_reading_comprehension.pdf as did questions
 var articles = {
-  a1: "1The Great Library of Alexandria was a\
-2 marvel of ancient Egypt and of human\
-3 achievement. Established during the Hellenistic\
-4 period sometime between 324 and 246 BCE,\
-5 under Ptolemy I or perhaps Ptolemy II, the\
-6 Library was reputedly an architectural wonder.\
-7 More importantly, the Library housed a vast\
-8 collection of works from all across the ancient\
-9 world and was a major center of scholarship.\
-10 The Library was charged with the ambitious\
-11 mission of collecting all of the world’s books,\
-12 and it employed numerous methods to acquire\
-13 new works. A well-funded acquisitions\
-14 department scoured the book fairs of Rhodes\
-15 and Athens, purchasing individual texts or even\
-16 whole libraries. Ships that landed at the harbor\
-17 of Alexandria were searched for books, and the\
-18 books were confiscated and copied. The copies\
-19 were returned to the owners of the originals,\
-20 but the originals were kept in the library. The\
-21 Library also employed a number of scholars\
-22 who produced original works on Astronomy,\
-23 Mathematics, Physics, and many other subjects.\
-#24 The scribes and scholars of the Great\
-25 Library not only collected books and conducted\
-26 research; they also assembled collections and\
-27 translated texts from around the word into\
-28 Greek. Many of the works translated or\
-29 assembled at Alexandria survive to this day:\
-30 some of the first translations of Biblical texts '\
-31 into Greek may have occurred in the time of\
-32 Ptolemy I at the Library of Alexandria, although\
->33 the canonical versions would not be created for\
-34 some hundreds of years more. In addition,\
-35 much work was done to compile and edit\
-36 authoritative versions of the Homeric myths\
-37 for which the Greeks are so well known today.\
-38 These texts have played a fundamental role in\
-39 shaping our culture for hundreds of years, and\
-40 were only a few of the great works of\
-41 translation and editing that took place in\
-#42 Alexandria in the Hellenistic period.\
-43 It is ironic that the fate of the Great\
-44 Library—an institution dedicated to the\
-45 collection and preservation of knowledge— is\
-46 shrouded in myth and mystery. Many sources\
-47 say it burned down, but they cannot agree\
-48 upon a date. It may have been burned more\
-49 than once, either by accident or intentionally.\
-50 Smaller sister institutions may have survived\
-51 the original library, only to be destroyed later.\
-52 The Great Library, or some version of it, could\
-53 have survived for anywhere from 300 to 1,000\
-54 years. Though the Library no longer stands,\
-55 there is little doubt that the scholarship of the\
-56 Great Library has had a great and lasting\
-57 impact on history. The works that were kept,\
-58 translated, or created there have had a\
-59 profound influence on our culture even to the\
-60 present day",
-  a2: '1 Oceans cover most of Earth’s surface,\
-2 and in their depths dwells most of the planet’s\
-3 life. We are drawn to certain aspects of the\
-4 ocean, yet most of the marine world is alien to\
-5 us. Just offshore, coral reefs dazzle us with rich\
-6 colors and complex ecosystems. Reef fish are\
-7 often quite beautiful, displaying a stunning\
-8 variety of colors and patterns, and are a\
-9 favorite choice for fish tanks. However, some\
-10 parts of the ocean are less familiar to us. Kelp\
-11 forests—thick, dizzying mazes of life—provide\
-12 food for snails and urchins, which in turn are a\
-13 source of food for otters, rockfish, and other\
-14 predatory animals. Far out beyond the coast,\
-15 where waves tower over ships, whales and\
-16 massive fish graze on microscopic plankton,\
-17 extracting their sustenance from what appears\
-18 to the naked eye to be nothing but water. And\
-19 deep down, beyond the continental shelf,\
-20 beyond the warming rays of the sun, lie the\
-21 abyssal plains.\
-22 Here flat grey plains of ooze stretch over\
-23 incredible distances, shrouded in darkness, fed\
-24 by a constant rain of decaying matter from the\
-25 seas above. At first glance, these appear to be\
-26 dead, empty places, but in truth they teem with\
-27 life. Most of the life on the abyssal plains is\
-28 bacterial, but there are larger creatures there\
-29 too. Deep sea corrals grow in the abyssal\
-30 plains, anchoring themselves to the sea floor.\
-31 There are also less familiar forms of life, like\
-32 the giant isopod and the sea pig. The giant\
-33 isopod is a crustacean, like a shrimp or lobster,\
-34 but it resembles a pill-bug, and can grow to be\
-35 more than a foot long. The sea pig is a kind of\
-36 sea cucumber. Most sea cucumbers resemble\
-37 slugs, but the sea pig has developed small\
-38 tubular legs and walks along the sea floor. It\
-39 gets its name from these legs and from its soft\
-40 pink flesh. There are fish, too, like the tripod\
-41 fish which uses long thin fins to perch on top of\
-42 the ooze, or the anglerfish which uses a\
-43 glowing rod-like appendage to lure prey into\
-44 its hungry jaws. And there must be much more\
-45 than we yet know; although this vast region\
-46 covers more than half of the entire solid\
-47 surface of the planet, it is one of the most\
-48 poorly explored places on Earth.\
-49 We have explored less than 1% of the\
-50 area covered by the abyssal plains, and most of\
-51 that exploration has been conducted by\
-52 remotely operated vehicles. Although we do\
-53 have small submarines capable of carrying\
-54 people to the depths of the ocean, fewer people\
-55 have gone to the abyssal plains than have gone\
-56 into space. This deep frontier, vast and\
-57 mysterious, will surely yield many new\
-58 discoveries in years to come if we only go and\
-59 look for them.'
+  a1: "The Great Library of Alexandria was a\r\ marvel of ancient Egypt and of human\r\ achievement. Established during the Hellenistic\r\ period sometime between 324 and 246 BCE,\r\ under Ptolemy I or perhaps Ptolemy II, the\r\ Library was reputedly an architectural wonder.\r\ More importantly, the Library housed a vast\r\ collection of works from all across the ancient\r\ world and was a major center of scholarship.\r\ The Library was charged with the ambitious\r\ mission of collecting all of the world’s books,\r\ and it employed numerous methods to acquire\r\ new works. A well-funded acquisitions\r\ department scoured the book fairs of Rhodes\r\ and Athens, purchasing individual texts or even\r\ whole libraries. Ships that landed at the harbor\r\ of Alexandria were searched for books, and the\r\ books were confiscated and copied. The copies\r\ were returned to the owners of the originals,\r\ but the originals were kept in the library. The\r\
+Library also employed a number of scholars\r\ who produced original works on Astronomy,\r\ Mathematics, Physics, and many other subjects.\r\ The scribes and scholars of the Great\r\ Library not only collected books and conducted\r\ research; they also assembled collections and\r\ translated texts from around the word into\r\ Greek. Many of the works translated or\r\ assembled at Alexandria survive to this day:\r\ some of the first translations of Biblical texts '\r\ into Greek may have occurred in the time of\r\ Ptolemy I at the Library of Alexandria, although\r\ the canonical (official) versions would not be created for\r\ some hundreds of years more. In addition,\r\ much work was done to compile and edit\r\ authoritative versions of the Homeric myths\r\ for which the Greeks are so well known today.\r\ These texts have played a fundamental role in\r\ shaping our culture for hundreds of years, and\r\ were only a few of the great works of\r\ translation and editing that took place in\r\
+ Alexandria in the Hellenistic period.\r\ It is ironic that the fate of the Great\r\ Library—an institution dedicated to the\r\ collection and preservation of knowledge— is\r\ shrouded in myth and mystery. Many sources\r\ say it burned down, but they cannot agree\r\ upon a date. It may have been burned more\r\ than once, either by accident or intentionally.\r\ Smaller sister institutions may have survived\r\ the original library, only to be destroyed later.\r\ The Great Library, or some version of it, could\r\ have survived for anywhere from 300 to 1,000\r\ years. Though the Library no longer stands,\r\ there is little doubt that the scholarship of the\r\ Great Library has had a great and lasting\r\ impact on history. The works that were kept,\r\ translated, or created there have had a\r\ profound influence on our culture even to the\r\ present day.",
+  a2: 'Oceans cover most of Earth’s surface,\r\ and in their depths dwells most of the planet’s\r\ life. We are drawn to certain aspects of the\r\ ocean, yet most of the marine world is alien to\r\ us. Just offshore, coral reefs dazzle us with rich\r\ colors and complex ecosystems. Reef fish are\r\ often quite beautiful, displaying a stunning\r\ variety of colors and patterns, and are a\r\ favorite choice for fish tanks. However, some\r\ parts of the ocean are less familiar to us. Kelp\r\ forests—thick, dizzying mazes of life—provide\r\ food for snails and urchins, which in turn are a\r\ source of food for otters, rockfish, and other\r\ predatory animals. Far out beyond the coast,\r\ where waves tower over ships, whales and\r\ massive fish graze on microscopic plankton,\r\ extracting their sustenance (nourishment) from what appears\r\ to the naked eye to be nothing but water. \r\
+  And\r\ deep down, beyond the continental shelf,\r\ beyond the warming rays of the sun, lie the\r\ abyssal plains.\r\
+  Here flat grey plains of ooze stretch over\r\ incredible distances, shrouded in darkness, fed\r\ by a constant rain of decaying matter from the\r\ seas above. At first glance, these appear to be\r\ dead, empty places, but in truth they teem with\r\ life. Most of the life on the abyssal plains is\r\ bacterial, but there are larger creatures there\r\ too. Deep sea corrals grow in the abyssal\r\ plains, anchoring themselves to the sea floor.\r\ There are also less familiar forms of life, like\r\ the giant isopod and the sea pig. The giant\r\ isopod is a crustacean, like a shrimp or lobster,\r\ but it resembles a pill-bug, and can grow to be\r\ more than a foot long. The sea pig is a kind of\r\ sea cucumber. Most sea cucumbers resemble\r\ slugs, but the sea pig has developed small\r\ tubular legs and walks along the sea floor. It\r\ gets its name from these legs and from its soft\r\ pink flesh. There are fish, too, like the tripod\r\ fish which uses long thin fins to perch on top of\r\
+  the ooze, or the anglerfish which uses a\r\ glowing rod-like appendage to lure prey into\r\ its hungry jaws. And there must be much more\r\ than we yet know; although this vast region\r\ covers more than half of the entire solid\r\ surface of the planet, it is one of the most\r\ poorly explored places on Earth.\r\ We have explored less than 1% of the\r\ area covered by the abyssal plains, and most of\r\ that exploration has been conducted by\r\ remotely operated vehicles. Although we do\r\ have small submarines capable of carrying\r\ people to the depths of the ocean, fewer people\r\ have gone to the abyssal plains than have gone\r\ into space. This deep frontier, vast and\r\ mysterious, will surely yield many new\r\ discoveries in years to come if we only go and\r\ look for them.'
 }
 // displays article
 function newVal() {
@@ -261,22 +149,22 @@ function quiz() {
     var fCheck3 = new False_check('The translation of existing works into a familiar language can be just as important as creating original works');
     var questionP2 = createP('The author of this passage would most likely agree that...');
     questionP2.class('q');
-    var fCheck4 = new False_check('The Great Library most likely survived for only about 300 years.');
-    var tCheck2 = new True_check('The ultimate fate of the Great Library should always remain a mystery.');
+    var fCheck4 = new False_check('The ultimate fate of the Great Library should always remain a mystery.');
+    var tCheck2 = new True_check('The Great Library most likely survived for only about 300 years.');
     var fCheck5 = new False_check('The preservation and advancement of knowledge is very important.');
     var fCheck6 = new False_check(' It is very surprising that ancient people were concerned about preserving books.');
-    var questionP3 = createP('In line 33, “canonical” most nearly means');
+    var questionP3 = createP('In line 33, “canonical” most nearly means...');
     questionP3.class('q');
     var fCheck7 = new False_check(' original.');
     var fCheck8 = new False_check('translated.');
     var fCheck9 = new False_check('ancient.');
     var tCheck3 = new True_check('official.');
-    var questionP4 = createP('Which best states the main point of the second paragraph (lines 24-42)? (you will have to use your memory)');
+    var questionP4 = createP('Which best states the main point of the second paragraph? (you will have to use your memory)');
     questionP4.class('q');
     var fCheck10 = new False_check('Ancient books were usually based on oral history');
     var fCheck11 = new False_check('Even historically important texts are only useful once they’ve been translated into a familiar language.');
-    var tCheck4 = new True_check(' The scholars of the Great Library were more interested in editing existing works than in creating new ones.');
-    var fCheck12 = new False_check('In addition to their other activities, the scholars of the Great Library translated and edited many important texts.');
+    var tCheck4 = new True_check('In addition to their other activities, the scholars of the Great Library translated and edited many important texts.');
+    var fCheck12 = new False_check('The scholars of the Great Library were more interested in editing existing works than in creating new ones.');
     var questionP5 = createP('What does the author suggest is the main problem with theories about the destruction of the Great Library?');
     questionP5.class('q');
     var fCheck13 = new False_check(' There are no surviving eye-witnesses to give an account of the Great Library’s destruction.');
@@ -286,8 +174,8 @@ function quiz() {
     var questionP6 = createP('Which best describes the organization of the passage?');
     questionP6.class('q');
     var fCheck16 = new False_check('The author relates a personal story about his experience with a real place, and describes the historical context.');
-    var tCheck6 = new True_check('The author describes a theory, discusses the evidence, and examines opposing viewpoints.');
-    var fCheck17 = new False_check('The author describes the founding of a historical institution, its role in ancient society, and its decline or destruction.');
+    var tCheck6 = new True_check('The author describes the founding of a historical institution, its role in ancient society, and its decline or destruction.');
+    var fCheck17 = new False_check('The author describes a theory, discusses the evidence, and examines opposing viewpoints.');
     var fCheck18 = new False_check('The author relates a story about the ancient world, and discusses its origins.');
 
     var all_Qs = selectAll('.q');
@@ -314,42 +202,42 @@ function quiz2() {
     openingP2.position(20, 20);
     final_points_button();
     //=============================
-    var questionP1 = createP('question1')
+    var questionP1 = createP('Which sentence best summarizes the author’s main idea in this passage?')
     questionP1.class('q');
-    var fCheck1 = new False_check('val');
-    var tCheck1 = new True_check('val');
-    var fCheck2 = new False_check('val');
-    var fCheck3 = new False_check('val');
-    var questionP2 = createP('question2');
+    var fCheck1 = new False_check('Plankton are an essential part ofocean food chains even in the deepestareas.');
+    var tCheck1 = new True_check('The ocean is a strange and wonderful place which is not yet fully explored.');
+    var fCheck2 = new False_check('We should invest more in exploring the ocean than in exploring space.');
+    var fCheck3 = new False_check('We don’t know very much about space and the oceans.');
+    var questionP2 = createP('Which best states the main point of the first part? (use your memory)');
     questionP2.class('q');
-    var fCheck4 = new False_check('val');
-    var fCheck5 = new False_check('val');
-    var tCheck2 = new True_check('val');
-    var fCheck6 = new False_check('val');
-    var questionP3 = createP('question3');
+    var fCheck4 = new False_check('People should spend more time in the ocean so that it will seem less alien.');
+    var fCheck5 = new False_check('Coral reefs are probably the most beautiful part of the ocean');
+    var tCheck2 = new True_check('The earth’s oceans contain a great variety of organisms and environments.');
+    var fCheck6 = new False_check(') The abyssal plains are the deepest parts of the ocean.');
+    var questionP3 = createP('“sustenance” most nearly means...');
     questionP3.class('q');
-    var fCheck7 = new False_check('val');
-    var fCheck8 = new False_check('val');
-    var fCheck9 = new False_check('val');
-    var tCheck3 = new True_check('val');
-    var questionP4 = createP('question4');
+    var fCheck7 = new False_check('activity.');
+    var fCheck8 = new False_check(' reproduction.');
+    var fCheck9 = new False_check('body size.');
+    var tCheck3 = new True_check('nourishment.');
+    var questionP4 = createP('What is the author’s purpose in pointing out that “fewer people have gone to the abyssal plains than have gone into space”?');
     questionP4.class('q');
-    var fCheck10 = new False_check('val');
-    var fCheck11 = new False_check('val');
-    var fCheck12 = new False_check('val');
-    var tCheck4 = new True_check('val');
-    var questionP5 = createP('question5');
+    var fCheck10 = new False_check('To highlight how dangerous the abyssal plains are for human beings.');
+    var fCheck11 = new False_check('To imply that it is more difficult to reach the ocean floor than it is to get into space.');
+    var fCheck12 = new False_check('To suggest that there is an unfair lack of funding for marine exploration compared to space exploration.');
+    var tCheck4 = new True_check('To support the idea that there is a great deal of exploration left to be done in the abyssal plains.');
+    var questionP5 = createP('The author’s attitude toward the ocean could best be described as...');
     questionP5.class('q');
-    var tCheck5 = new True_check('val');
-    var fCheck13 = new False_check('val');
-    var fCheck14 = new False_check('val');
-    var fCheck15 = new False_check('val');
-    var questionP6 = createP('question6');
+    var tCheck5 = new True_check('fascinated.');
+    var fCheck13 = new False_check('ambivalent');
+    var fCheck14 = new False_check('stern.');
+    var fCheck15 = new False_check('indifferent');
+    var questionP6 = createP('The passage implies that rockfish and otters...');
     questionP6.class('q');
-    var fCheck16 = new False_check('val');
-    var fCheck17 = new False_check('val');
-    var fCheck18 = new False_check('val');
-    var tCheck6 = new True_check('val');
+    var fCheck16 = new False_check('only feed on snails.');
+    var fCheck17 = new False_check('feed on the kelp that grows in kelp forests.');
+    var fCheck18 = new False_check('are more familiar than most sea creatures');
+    var tCheck6 = new True_check('are both predators.');
 
     var all_Qs = selectAll('.q');
     for (var i = 0; i < all_Qs.length; i++) {
